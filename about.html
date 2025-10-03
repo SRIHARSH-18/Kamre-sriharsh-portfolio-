@@ -9,11 +9,13 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #1a1a1a;
-      color: #f0f0f0;
+      background-color: #1a1a1a; /* Dark background */
+      color: #f0f0f0; /* Light text */
     }
-    .container-bg { background-color: #242424; }
-    .text-primary { color: #4285f4; }
+    .container-bg {
+      background-color: #242424; /* Slightly lighter dark background for container */
+    }
+    .text-primary { color: #4285f4; } /* Google Blue for highlights */
     .border-primary { border-color: #4285f4; }
     .timeline-item {
       position: relative;
@@ -50,39 +52,26 @@
       background-color: #1a73e8;
       transform: translateY(-2px);
     }
-    /* Navbar */
-    header {
-      background: #1f2937;
-      padding: 15px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #d1d5db;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    nav a:hover { color: #ffffff; }
-    nav a.active { color: #60a5fa; }
   </style>
 </head>
-<body class="p-0">
+<body class="p-4 md:p-8">
 
-  <!-- Navbar -->
-  <header class="shadow-md">
-    <nav class="flex justify-center">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="test-results.html">Test Results</a>
-    </nav>
-  </header>
+  <!-- 🔹 Navigation Bar -->
+  <nav class="bg-[#242424] text-gray-300 py-4 mb-10 shadow-lg rounded-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+      <h1 class="text-2xl font-bold text-primary">Sriharsh</h1>
+      <ul class="flex space-x-8">
+        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-primary transition">About</a></li>
+        <li><a href="test.html" class="hover:text-primary transition">Test Results</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Page Content -->
-  <div class="max-w-4xl mx-auto container-bg rounded-lg shadow-2xl p-6 md:p-10 mt-6">
+  <!-- 🔹 Page Content -->
+  <div class="max-w-4xl mx-auto container-bg rounded-lg shadow-2xl p-6 md:p-10">
     
-    <!-- 1. HEADER SECTION -->
+    <!-- HEADER SECTION -->
     <header class="text-center mb-12">
       <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary object-cover">
       <h1 class="text-4xl font-bold">KAMRE SRIHARSH</h1>
@@ -97,17 +86,16 @@
       </div>
     </header>
 
-    <!-- 2. ABOUT ME -->
+    <!-- ABOUT SECTION -->
     <section class="mb-12">
       <h2 class="text-3xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2">About Me</h2>
       <p class="text-lg leading-relaxed text-gray-300">
-        I am a <strong>dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core)</strong> at Manav Rachna University. 
+        I am a <b>dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core)</b> at Manav Rachna University. 
         My core focus lies in the practical implementation of IT systems, driven by certifications in 
-        <strong>Cisco Networking</strong> and <strong>Full Stack Development</strong>. 
-        I am passionate about turning theoretical knowledge into tangible skills using languages like 
-        <strong>Java</strong> and <strong>SQL</strong>. 
-        I am actively involved in the <strong>IEEE Student Branch</strong>, demonstrating a strong commitment 
-        to continuous learning and collaboration within team settings.
+        <b>Cisco Networking</b> and <b>Full Stack Development</b>. I am passionate about turning theoretical 
+        knowledge into tangible skills using languages like <b>Java</b> and <b>SQL</b>. I am actively involved 
+        in the <b>IEEE Student Branch</b>, demonstrating a strong commitment to continuous learning and 
+        collaboration within team settings.
       </p>
       
       <a href="YOUR_RESUME_PDF_LINK" target="_blank" class="cta-button inline-block mt-8 py-3 px-8 text-white font-semibold rounded-full text-lg">
@@ -115,29 +103,34 @@
       </a>
     </section>
 
-    <!-- 3. SKILLS AND MILESTONES -->
+    <!-- MILESTONES SECTION -->
     <section>
       <h2 class="text-3xl font-semibold mb-8 text-primary border-b border-gray-700 pb-2">Technical Milestones & Strengths</h2>
+      
       <div class="space-y-6">
         <div class="timeline-item">
           <h3 class="text-xl font-bold mb-1">Networking and Infrastructure</h3>
-          <p class="text-gray-400">Achieved <strong>Cisco CCNA (200-301) Cert Prep: 1</strong> status, demonstrating mastery of Network Fundamentals and Access. Gained hands-on experience through <strong>Cisco Networking Workshops</strong>.</p>
+          <p class="text-gray-400">Achieved Cisco CCNA (200-301) Cert Prep: 1, demonstrating mastery of Network Fundamentals and Access.</p>
         </div>
+        
         <div class="timeline-item">
           <h3 class="text-xl font-bold mb-1">Programming & Data</h3>
-          <p class="text-gray-400">Intermediate skills in <strong>Java</strong> and <strong>SQL (MySQL)</strong>. Basic foundation of <strong>Data Structures and Algorithms (DSA)</strong>.</p>
+          <p class="text-gray-400">Intermediate skills in Java and SQL (MySQL). Basic foundational knowledge of Data Structures and Algorithms (DSA).</p>
         </div>
+        
         <div class="timeline-item">
           <h3 class="text-xl font-bold mb-1">Professional Development</h3>
-          <p class="text-gray-400">Completed the <strong>Free Masterclass: Roadmap of Full Stack Developer</strong>, providing a strategic view of the web development lifecycle.</p>
+          <p class="text-gray-400">Completed Free Masterclass: Roadmap of Full Stack Developer, giving strategic insights into web dev lifecycle.</p>
         </div>
+        
         <div class="timeline-item">
           <h3 class="text-xl font-bold mb-1">Collaboration & Leadership</h3>
-          <p class="text-gray-400">Active Member of the <strong>IEEE Student Branch</strong> and <strong>Technical Fest Volunteer</strong>, developing strong communication and problem-solving skills.</p>
+          <p class="text-gray-400">Active member of IEEE Student Branch and Technical Fest Volunteer with strong communication and time management skills.</p>
         </div>
+
         <div class="timeline-item">
           <h3 class="text-xl font-bold mb-1">Academic Background</h3>
-          <p class="text-gray-400">Currently pursuing B.Tech in CSE (Core) at Manav Rachna University (2023-2026).</p>
+          <p class="text-gray-400">Currently pursuing B.Tech in CSE (Core) at Manav Rachna University (2023–2026).</p>
         </div>
       </div>
     </section>
