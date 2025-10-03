@@ -7,73 +7,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
-    body { background: #f9f9f9; color: #333; }
-    header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg,#1a73e8,#4285f4); color: white; }
-    header img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid white; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; margin-bottom: 20px; }
-    header a { padding: 10px 20px; background: white; color:#1a73e8; text-decoration: none; border-radius: 5px; font-weight: 700; transition: 0.3s; }
-    header a:hover { background: #e0e0e0; }
-    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
-    section h2 { font-size: 2rem; margin-bottom: 20px; text-align:center; color:#1a73e8; }
-    .skills, .projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); flex: 1 1 250px; text-align: center; }
-    .card h3 { margin-bottom: 10px; color:#333; }
-    .card p { color: #555; }
-    footer { text-align: center; padding: 20px; background:#1a73e8; color:white; }
-    footer a { color:white; margin: 0 10px; text-decoration:none; font-weight:bold; }
-    footer a:hover { text-decoration: underline; }
+    body { background:#f9f9f9; color:#333; }
+    header { background:#1a73e8; padding:20px; color:white; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    .container { max-width:1000px; margin:auto; padding:40px 20px; }
+    h1,h2 { color:#1a73e8; text-align:center; }
+    .hero { text-align:center; padding:60px 20px; }
+    .hero img { width:160px; height:160px; border-radius:50%; border:4px solid white; object-fit:cover; }
+    footer { text-align:center; padding:20px; background:#1a73e8; color:white; margin-top:40px; }
+    footer a { color:white; margin:0 10px; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
   <header>
-    <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh Profile Photo">
-    <h1>KAMRE SRIHARSH</h1>
-    <p>3rd-Year B.Tech CSE (Core) | Networking & Full-Stack Enthusiast</p>
-    <a href="#projects">View Projects</a>
+    <h1>Kamre Sriharsh</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="test-results.html">Test Results</a>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      I am a dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core) at Manav Rachna University. 
-      With certifications in <b>Cisco Networking</b> and <b>Full Stack Development</b>, I focus on building practical skills. 
-      As an <b>active IEEE Student Branch member</b>, I am passionate about continuous learning and contributing positively in team-driven technical environments.
-    </p>
+  <section class="hero">
+    <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh">
+    <h2>3rd-Year B.Tech CSE (Core) | Networking & Full-Stack Enthusiast</h2>
+    <p>Passionate about Networking, Cisco, Full-Stack Development, and IEEE activities.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <div class="card"><h3>Java & SQL</h3><p>Intermediate proficiency, applied in MySQL databases and logical programming solutions.</p></div>
-      <div class="card"><h3>Cisco Networking</h3><p>CCNA (200-301) Certification Prep with routing and network fundamentals simulations.</p></div>
-      <div class="card"><h3>DSA Basics</h3><p>Understanding of Data Structures and Algorithms for problem-solving and optimization.</p></div>
-      <div class="card"><h3>Full Stack Roadmap</h3><p>Knowledge of development processes gained through certified masterclass training.</p></div>
-    </div>
-  </section>
+  <div class="container">
+    <h2>Welcome to My Portfolio</h2>
+    <p style="text-align:center;">Explore my skills, certifications, and technical journey across networking, coding, and active IEEE participation.</p>
+  </div>
 
-  <!-- Projects / Certifications Section -->
-  <section id="projects">
-    <h2>Certifications & Activities</h2>
-    <div class="projects">
-      <div class="card"><h3>Cisco CCNA Prep</h3><p>Hands-on workshop covering practical networking concepts and routing simulations.</p></div>
-      <div class="card"><h3>IEEE Student Member</h3><p>Active participation in technical workshops, hackathons, and seminars with leadership experience.</p></div>
-      <div class="card"><h3>Technical Fest Volunteer</h3><p>Gained organizational and time management skills by managing and supporting events.</p></div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
   <footer>
-    Connect with me: 
-    <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284" target="_blank">LinkedIn</a> | 
-    <a href="https://github.com/SRIHARSH-18" target="_blank">GitHub</a> | 
-    <a href="mailto:kamresriharsh18@gmail.com">Email</a> | 
-    <a href="YOUR_RESUME_PDF_LINK" target="_blank">Resume PDF</a>
+    Connect with me:
+    <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/SRIHARSH-18" target="_blank">GitHub</a> |
+    <a href="mailto:kamresriharsh18@gmail.com">Email</a>
   </footer>
-
 </body>
 </html>
