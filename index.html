@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamre Sriharsh | Portfolio</title>
-    <!-- Using the CSS link for Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Shared Styles for Consistency */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a1a1a; /* Dark background matching about_page.html */
-            color: #f0f0f0; /* Light text */
+            background-color: #1a1a1a;
+            color: #f0f0f0;
         }
-        .text-primary { color: #4285f4; } /* Google Blue for highlights */
-        
-        /* Header/Navigation Styling */
+        .text-primary { color: #4285f4; }
+
         header { 
-            background: #242424; /* Darker background for header */
+            background: #242424;
             padding: 1rem 1.25rem;
             color: white; 
             position: sticky; 
@@ -34,16 +31,11 @@
             padding-bottom: 0.2rem;
             transition: border-color 0.2s;
         }
-        nav a:hover { 
-            border-bottom: 2px solid #4285f4; /* Primary color on hover */
-        }
-        nav a.active { 
-            border-bottom: 2px solid #4285f4; 
-        }
+        nav a:hover { border-bottom: 2px solid #4285f4; }
+        nav a.active { border-bottom: 2px solid #4285f4; }
 
-        /* Hero Styling */
         .hero { 
-            height: 90vh; /* Make it nearly full screen */
+            height: 90vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -56,55 +48,33 @@
             width: 180px; 
             height: 180px; 
             border-radius: 50%; 
-            border: 5px solid #4285f4; /* Primary color border */
+            border: 5px solid #4285f4;
             object-fit: cover; 
             margin-bottom: 1.5rem;
         }
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: white;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            color: #ccc;
-            max-width: 600px;
-            margin-bottom: 2rem;
-        }
+        .hero h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 0.5rem; color: white; }
+        .hero p { font-size: 1.25rem; color: #ccc; max-width: 600px; margin-bottom: 2rem; }
 
-        /* Footer Styling */
         footer { 
             text-align: center; 
             padding: 1.25rem; 
             background: #242424; 
             color: #bbb; 
-            margin-top: 0; 
         }
-        footer a { 
-            color: #4285f4; 
-            margin: 0 0.625rem; 
-            text-decoration: none; 
-            font-weight: 600; 
-        }
-        footer a:hover { 
-            text-decoration: underline; 
-        }
+        footer a { color: #4285f4; margin: 0 0.625rem; text-decoration: none; font-weight: 600; }
+        footer a:hover { text-decoration: underline; }
 
-        /* Call to Action Button */
         .cta-button {
             background-color: #4285f4;
             box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
             transition: transform 0.2s, background-color 0.2s;
         }
-        .cta-button:hover {
-            background-color: #1a73e8;
-            transform: translateY(-2px);
-        }
+        .cta-button:hover { background-color: #1a73e8; transform: translateY(-2px); }
     </style>
 </head>
 <body>
 
+    <!-- Navigation Header -->
     <header>
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <h1 class="text-xl font-bold">Kamre Sriharsh</h1>
@@ -116,14 +86,14 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <!-- CRITICAL FIX APPLIED: This uses the direct Google Drive image embed format. -->
-        <!-- NOTE: This only works if the image's sharing setting is set to "Anyone with the link." -->
-       <img src="https://drive.google.com/uc?export=view&id=1EOPYLBhfz-VyhXPdsMyWlNbiQcwpe9_D" alt="Kamre Sriharsh Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500 object-cover">
+        <!-- Working hosted image placeholder -->
+        <img src="https://i.imgur.com/3GxX8wY.jpg" alt="Kamre Sriharsh Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500 object-cover">
 
         <h1 class="text-5xl">Future-Ready CSE Professional</h1>
         <p class="text-2xl mt-4 font-light">
-            3rd-Year B.Tech CSE (Core) | Bridging the gap between **Cisco Networking** and **Full-Stack Development**.
+            3rd-Year B.Tech CSE (Core) | Bridging the gap between Cisco Networking and Full-Stack Development.
         </p>
         
         <a href="about_page.html" class="cta-button py-3 px-8 text-white font-semibold rounded-full text-lg mt-8">
@@ -131,12 +101,14 @@
         </a>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p class="text-sm mb-2">Connect with Kamre Sriharsh:</p>
-        <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+        <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284" target="_blank">LinkedIn</a> |
         <a href="https://github.com/SRIHARSH-18" target="_blank">GitHub</a> |
         <a href="mailto:kamresriharsh18@gmail.com">Email</a>
         <p class="text-xs text-gray-500 mt-2">Adilabad, Telangana</p>
     </footer>
+
 </body>
 </html>
