@@ -8,9 +8,11 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
     body { background:#f9f9f9; color:#333; }
-    header { background:#1a73e8; padding:20px; color:white; text-align:center; }
+    header { background:#1a73e8; padding:15px 20px; color:white; text-align:center; position:sticky; top:0; z-index:1000; }
+    nav { margin-top:10px; }
     nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
     nav a:hover { text-decoration:underline; }
+    nav a.active { border-bottom:2px solid white; padding-bottom:3px; }
     .container { max-width:1000px; margin:auto; padding:40px 20px; }
     h1,h2 { color:#1a73e8; text-align:center; }
     .hero { text-align:center; padding:60px 20px; }
@@ -25,7 +27,7 @@
   <header>
     <h1>Kamre Sriharsh</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="test-results.html">Test Results</a>
     </nav>
