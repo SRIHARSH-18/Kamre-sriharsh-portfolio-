@@ -3,38 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Kamre Sriharsh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Kamre Sriharsh | About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family:'Inter', sans-serif; margin:0; background:#f9f9f9; }
-    header { background:#1a73e8; padding:15px 20px; color:white; text-align:center; position:sticky; top:0; z-index:1000; }
-    nav { margin-top:10px; }
-    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    nav a.active { border-bottom:2px solid white; padding-bottom:3px; }
-    .container { max-width:900px; margin:auto; padding:40px 20px; }
-    h1 { color:#1a73e8; text-align:center; }
-    footer { text-align:center; padding:20px; background:#1a73e8; color:white; margin-top:40px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+    }
+    .container-bg { background-color: #242424; }
+    .text-primary { color: #4285f4; }
+    .border-primary { border-color: #4285f4; }
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #4285f4;
+      border: 2px solid #242424;
+      z-index: 10;
+    }
+    .timeline-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 15px;
+      width: 2px;
+      height: calc(100% - 15px);
+      background: #555;
+    }
+    .cta-button {
+      background-color: #4285f4;
+      box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .cta-button:hover {
+      background-color: #1a73e8;
+      transform: translateY(-2px);
+    }
+    /* Navbar */
+    header {
+      background: #1f2937;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #d1d5db;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    nav a:hover { color: #ffffff; }
+    nav a.active { color: #60a5fa; }
   </style>
 </head>
-<body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
+<body class="p-0">
+
+  <!-- Navbar -->
+  <header class="shadow-md">
+    <nav class="flex justify-center">
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="test-results.html">Test Results</a>
     </nav>
   </header>
 
-  <div class="container">
-    <p>
-      I am a 3rd-year B.Tech Computer Science student specializing in Networking and Full-Stack Development.  
-      With certifications in <b>Cisco CCNA</b> and <b>Full-Stack Masterclass</b>, I have applied my skills in workshops, IEEE student branch events, and personal projects.  
-      I aim to build a strong career blending software and networking expertise.
-    </p>
-  </div>
+  <!-- Page Content -->
+  <div class="max-w-4xl mx-auto container-bg rounded-lg shadow-2xl p-6 md:p-10 mt-6">
+    
+    <!-- 1. HEADER SECTION -->
+    <header class="text-center mb-12">
+      <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary object-cover">
+      <h1 class="text-4xl font-bold">KAMRE SRIHARSH</h1>
+      <p class="text-xl text-gray-400 mt-2">B.Tech CSE Core | Networker & Full-Stack Learner</p>
+      
+      <div class="mt-6 flex justify-center space-x-4">
+        <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284" target="_blank" class="text-gray-400 hover:text-primary transition">LinkedIn</a>
+        <span class="text-gray-600">|</span>
+        <a href="https://github.com/SRIHARSH-18" target="_blank" class="text-gray-400 hover:text-primary transition">GitHub</a>
+        <span class="text-gray-600">|</span>
+        <a href="mailto:kamresriharsh18@gmail.com" class="text-gray-400 hover:text-primary transition">Email</a>
+      </div>
+    </header>
 
-  <footer>© 2025 Kamre Sriharsh | Portfolio</footer>
+    <!-- 2. ABOUT ME -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold mb-6 text-primary border-b border-gray-700 pb-2">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-300">
+        I am a <strong>dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core)</strong> at Manav Rachna University. 
+        My core focus lies in the practical implementation of IT systems, driven by certifications in 
+        <strong>Cisco Networking</strong> and <strong>Full Stack Development</strong>. 
+        I am passionate about turning theoretical knowledge into tangible skills using languages like 
+        <strong>Java</strong> and <strong>SQL</strong>. 
+        I am actively involved in the <strong>IEEE Student Branch</strong>, demonstrating a strong commitment 
+        to continuous learning and collaboration within team settings.
+      </p>
+      
+      <a href="YOUR_RESUME_PDF_LINK" target="_blank" class="cta-button inline-block mt-8 py-3 px-8 text-white font-semibold rounded-full text-lg">
+        Download Full Resume
+      </a>
+    </section>
+
+    <!-- 3. SKILLS AND MILESTONES -->
+    <section>
+      <h2 class="text-3xl font-semibold mb-8 text-primary border-b border-gray-700 pb-2">Technical Milestones & Strengths</h2>
+      <div class="space-y-6">
+        <div class="timeline-item">
+          <h3 class="text-xl font-bold mb-1">Networking and Infrastructure</h3>
+          <p class="text-gray-400">Achieved <strong>Cisco CCNA (200-301) Cert Prep: 1</strong> status, demonstrating mastery of Network Fundamentals and Access. Gained hands-on experience through <strong>Cisco Networking Workshops</strong>.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="text-xl font-bold mb-1">Programming & Data</h3>
+          <p class="text-gray-400">Intermediate skills in <strong>Java</strong> and <strong>SQL (MySQL)</strong>. Basic foundation of <strong>Data Structures and Algorithms (DSA)</strong>.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="text-xl font-bold mb-1">Professional Development</h3>
+          <p class="text-gray-400">Completed the <strong>Free Masterclass: Roadmap of Full Stack Developer</strong>, providing a strategic view of the web development lifecycle.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="text-xl font-bold mb-1">Collaboration & Leadership</h3>
+          <p class="text-gray-400">Active Member of the <strong>IEEE Student Branch</strong> and <strong>Technical Fest Volunteer</strong>, developing strong communication and problem-solving skills.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="text-xl font-bold mb-1">Academic Background</h3>
+          <p class="text-gray-400">Currently pursuing B.Tech in CSE (Core) at Manav Rachna University (2023-2026).</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
 </body>
 </html>
