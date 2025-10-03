@@ -1,76 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K. Sai Manohar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
-    body { background: #f9f9f9; color: #333; }
-    header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg,#1a73e8,#4285f4); color: white; }
-    header img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid white; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.2rem; margin-bottom: 20px; }
-    header a { padding: 10px 20px; background: white; color:#1a73e8; text-decoration: none; border-radius: 5px; font-weight: 700; transition: 0.3s; }
-    header a:hover { background: #e0e0e0; }
-    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
-    section h2 { font-size: 2rem; margin-bottom: 20px; text-align:center; color:#1a73e8; }
-    .skills, .projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); flex: 1 1 250px; text-align: center; }
-    .card h3 { margin-bottom: 10px; color:#333; }
-    .card p { color: #555; }
-    footer { text-align: center; padding: 20px; background:#1a73e8; color:white; }
-    footer a { color:white; margin: 0 10px; text-decoration:none; font-weight:bold; }
-    footer a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
+<div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; text-align: center;">
 
-  <!-- Landing / Hero Section -->
-  <header>
-    <img src="YOUR_PHOTO_URL" alt="Profile Photo">
-    <h1>K. Sai Manohar</h1>
-    <p>Aspiring Ethical Hacker & Cybersecurity Enthusiast</p>
-    <a href="#projects">View Projects</a>
-  </header>
+  <div style="margin-bottom: 40px;">
+    <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh Profile Photo" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
+    <h1 style="margin-top: 20px;">KAMRE SRIHARSH</h1>
+    <p style="font-size: 18px; color: gray;">3rd-Year B.Tech CSE (Core) Student | Networking & Full-Stack Enthusiast</p>
+    <p style="margin-top:10px;"><a href="mailto:kamresriharsh18@gmail.com" style="text-decoration:none; color:#1a73e8;">kamresriharsh18@gmail.com</a> | 6300397829</p>
+  </div>
 
-  <!-- About Section -->
-  <section id="about">
+  <div style="text-align:left; margin-bottom: 40px;">
     <h2>About Me</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      I’m K. Sai Manohar, a B.Tech Cybersecurity student passionate about ethical hacking, penetration testing, and digital forensics. I enjoy solving real-world cybersecurity challenges and building projects that enhance digital security awareness.
+    <p>I'm a dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core) at Manav Rachna University, with certifications in Cisco Networking and Full Stack Development. I am passionate about learning new technologies, building practical skills using Java and SQL, and contributing effectively to team-driven environments.</p>
+  </div>
+
+  <div style="text-align:left; margin-bottom: 40px;">
+    <h2>Key Certifications & Activities</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li style="margin-bottom: 10px;"><strong>Cisco CCNA (200-301) Cert Prep:</strong> Focused on Network Fundamentals and Access.</li>
+      <li style="margin-bottom: 10px;"><strong>Full Stack Development:</strong> Completed a masterclass on the Full Stack Developer roadmap, applying skills in Java and MySQL.</li>
+      <li style="margin-bottom: 10px;"><strong>Active IEEE Member:</strong> Engaged in technical workshops, hackathons, and seminars, developing leadership and time management skills.</li>
+      <li style="margin-bottom: 10px;"><strong>Core Technical Skills:</strong> Java (Intermediate), SQL (Intermediate), MySQL Database, and Basic DSA.</li>
+    </ul>
+  </div>
+
+  <div style="margin-top: 40px; font-size: 14px; color: gray;">
+    <p>Connect with me:
+      <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color:#1a73e8;">LinkedIn</a> |
+      <a href="https://github.com/SRIHARSH-18" target="_blank" style="color:#1a73e8;">GitHub</a> |
+      <a href="YOUR_RESUME_PDF_LINK" target="_blank" style="color:#1a73e8;">Download Resume</a>
     </p>
-  </section>
+    <p style="margin-top: 5px;">Based in Adilabad, Telangana</p>
+  </div>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card"><h3>Penetration Testing</h3><p>Identifying security vulnerabilities in systems.</p></div>
-      <div class="card"><h3>Network Security</h3><p>Securing networks against attacks.</p></div>
-      <div class="card"><h3>Digital Forensics</h3><p>Analyzing and investigating digital incidents.</p></div>
-      <div class="card"><h3>Ethical Hacking</h3><p>Practicing hacking for defense and learning.</p></div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects & Achievements</h2>
-    <div class="projects">
-      <div class="card"><h3>CTF Challenges</h3><p>Web & Crypto Capture the Flag competitions</p></div>
-      <div class="card"><h3>Cybersecurity Internship</h3><p>Completed internship at 1Stop with hands-on projects</p></div>
-      <div class="card"><h3>Research Paper</h3><p>Systematic Literature Review on Android Malware Detection</p></div>
-    </div>
-  </section>
-
-  <!-- Footer / Contact -->
-  <footer>
-    Connect with me: 
-    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a> | 
-    <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a> | 
-    <a href="mailto:youremail@example.com">Email</a>
-  </footer>
-
-</body>
-</html>
+</div>
