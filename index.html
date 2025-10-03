@@ -1,34 +1,73 @@
-<div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; text-align: center;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamre Sriharsh | CSE & Networking Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Styling remains the same for clean aesthetics */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f9f9f9; color: #333; }
+    header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg,#1a73e8,#4285f4); color: white; }
+    header img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid white; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; margin-bottom: 20px; }
+    header a { padding: 10px 20px; background: white; color:#1a73e8; text-decoration: none; border-radius: 5px; font-weight: 700; transition: 0.3s; }
+    header a:hover { background: #e0e0e0; }
+    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+    section h2 { font-size: 2rem; margin-bottom: 20px; text-align:center; color:#1a73e8; }
+    .skills, .projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); flex: 1 1 250px; text-align: center; }
+    .card h3 { margin-bottom: 10px; color:#333; }
+    .card p { color: #555; }
+    footer { text-align: center; padding: 20px; background:#1a73e8; color:white; }
+    footer a { color:white; margin: 0 10px; text-decoration:none; font-weight:bold; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
 
-  <div style="margin-bottom: 40px;">
-    <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh Profile Photo" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
-    <h1 style="margin-top: 20px;">KAMRE SRIHARSH</h1>
-    <p style="font-size: 18px; color: gray;">3rd-Year B.Tech CSE (Core) Student | Networking & Full-Stack Enthusiast</p>
-    <p style="margin-top:10px;"><a href="mailto:kamresriharsh18@gmail.com" style="text-decoration:none; color:#1a73e8;">kamresriharsh18@gmail.com</a> | 6300397829</p>
-  </div>
+  <header>
+    <img src="YOUR_PHOTO_URL" alt="Kamre Sriharsh Profile Photo">
+    <h1>KAMRE SRIHARSH</h1>
+    <p>3rd-Year B.Tech CSE (Core) | Networking & Full-Stack Enthusiast</p>
+    <a href="#projects">View Projects</a>
+  </header>
 
-  <div style="text-align:left; margin-bottom: 40px;">
+  <section id="about">
     <h2>About Me</h2>
-    <p>I'm a dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core) at Manav Rachna University, with certifications in Cisco Networking and Full Stack Development. I am passionate about learning new technologies, building practical skills using Java and SQL, and contributing effectively to team-driven environments.</p>
-  </div>
-
-  <div style="text-align:left; margin-bottom: 40px;">
-    <h2>Key Certifications & Activities</h2>
-    <ul style="list-style-type: none; padding-left: 0;">
-      <li style="margin-bottom: 10px;"><strong>Cisco CCNA (200-301) Cert Prep:</strong> Focused on Network Fundamentals and Access.</li>
-      <li style="margin-bottom: 10px;"><strong>Full Stack Development:</strong> Completed a masterclass on the Full Stack Developer roadmap, applying skills in Java and MySQL.</li>
-      <li style="margin-bottom: 10px;"><strong>Active IEEE Member:</strong> Engaged in technical workshops, hackathons, and seminars, developing leadership and time management skills.</li>
-      <li style="margin-bottom: 10px;"><strong>Core Technical Skills:</strong> Java (Intermediate), SQL (Intermediate), MySQL Database, and Basic DSA.</li>
-    </ul>
-  </div>
-
-  <div style="margin-top: 40px; font-size: 14px; color: gray;">
-    <p>Connect with me:
-      <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color:#1a73e8;">LinkedIn</a> |
-      <a href="https://github.com/SRIHARSH-18" target="_blank" style="color:#1a73e8;">GitHub</a> |
-      <a href="YOUR_RESUME_PDF_LINK" target="_blank" style="color:#1a73e8;">Download Resume</a>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      I am a dedicated 3rd-year B.Tech student in Computer Science and Engineering (Core) at Manav Rachna University. With certifications in **Cisco Networking** and **Full Stack Development**, I focus on building practical skills. I am an **active IEEE Student Branch member**, passionate about continuous learning, and committed to contributing positively in team-driven technical environments.
     </p>
-    <p style="margin-top: 5px;">Based in Adilabad, Telangana</p>
-  </div>
+  </section>
 
-</div>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Java & SQL</h3><p>Intermediate proficiency, applied in database (MySQL) and logic solutions.</p></div>
+      <div class="card"><h3>Cisco Networking</h3><p>CCNA (200-301) Cert Prep. Experienced in routing and network fundamentals simulations.</p></div>
+      <div class="card"><h3>DSA Basics</h3><p>Fundamental understanding of Data Structures and Algorithms for optimized solutions.</p></div>
+      <div class="card"><h3>Full Stack Roadmap</h3><p>Knowledge of development processes gained through certified masterclass training.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Certifications & Activities</h2>
+    <div class="projects">
+      <div class="card"><h3>Cisco CCNA Prep</h3><p>Completed hands-on workshop focused on practical networking concepts and routing simulations.</p></div>
+      <div class="card"><h3>IEEE Student Member</h3><p>Active participation in technical workshops, hackathons, and seminars, developing leadership skills.</p></div>
+      <div class="card"><h3>Technical Fest Volunteer</h3><p>Developed key interpersonal and time management skills through managing and supporting events.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    Connect with me:
+    <a href="https://www.linkedin.com/in/kamre-sriharsh-829827284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/SRIHARSH-18" target="_blank">GitHub</a> |
+    <a href="mailto:kamresriharsh18@gmail.com">Email</a> |
+    <a href="YOUR_RESUME_PDF_LINK" target="_blank">Resume PDF</a>
+  </footer>
+
+</body>
+</html>
